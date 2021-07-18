@@ -1,22 +1,15 @@
-import Album from "./components/Album";
-import Artists from "./components/Artists";
-import Select from "./components/Select";
-import Title from "./components/Title";
-import data from "./data/dummy";
+  
+import './App.css';
+// import Album from './pages/home';
+import Tracks from './pages/loop-tracks';
 
-
-
-
-
-function App(){
+function App() {
   return (
-    <div className="Container">
-      <img src={data.album.images[1].url} alt="img"/>
-      <Title/>
-      <Artists/>
-      <Album/>
-      <Select/>
+    <div className="App">
+      {/* <Album/> */}
+      <Tracks/>
     </div>
-  )
+  );
 }
+
 export default App;
